@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Heading</h1>
+
+        <div class="query-box">
+            <label for="search">Choose : </label>
+            <select id="search">
+                <option disabled selected value="">Select an option...</option>
+                <option value="currency">Currency Exchange Rates</option>
+                <option value="crypto">CryptoCurrency Insights</option>
+            </select>
+            <br><br>
+            <label for="entity">Choose entity for Enquiry</label>
+            <select id="entity">
+                <option disabled selected value="">Select an option...</option>
+            </select>
+            <br><br>
+            <label for="cryptodropdown">Select Stat for Enquiry: </label>
+            <select id="cryptodropdown">
+                <option disabled selected value="">Select an option...</option>
+                <option value="rank">rank</options>
+                <option value="priceUsd">priceUsd</option>
+                <option value="changePercent24Hr">changePercent24Hr</options>
+                <option value="volumeUsd24Hr">volumeUsd24Hr</options>
+                <option value="supply">supply</options>
+                <option value="vwap24Hr">vwap24hr</options>
+            </select>
+        </div>
+    </div>
+
+    <script src ="script.js"></script>
+</body>
+</html>
