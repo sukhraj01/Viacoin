@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container1">
         <h1>Heading</h1>
 
         <div class="query-box">
@@ -21,12 +21,12 @@
             <br><br>
             <label for="entity">Choose entity for Enquiry</label>
             <select id="entity">
-                <option disabled selected value="">Select an option...</option>
+                <!-- <option disabled selected value="">Select an option...</option> -->
             </select>
             <br><br>
-            <label for="cryptodropdown">Select Stat for Enquiry: </label>
+            <label for="cryptodropdown" id = "x">Select Stat for Enquiry: </label>
             <select id="cryptodropdown">
-                <option disabled selected value="">Select an option...</option>
+                <!-- <option disabled selected value="">Select an option...</option> -->
                 <option value="rank">rank</options>
                 <option value="priceUsd">priceUsd</option>
                 <option value="changePercent24Hr">changePercent24Hr</options>
@@ -34,9 +34,30 @@
                 <option value="supply">supply</options>
                 <option value="vwap24Hr">vwap24hr</options>
             </select>
+            <br>
+            <button disabled type="submit" id="submit">Submit Enquiry</button>
         </div>
     </div>
 
+    <div class="container2">
+        <div class="enquiry-list">
+            <table border="black">
+                <caption><h1>Enquiry List</h1></caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Enquiry</th>
+                        <th>Enquiry Response</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+            </table>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src ="script.js"></script>
 </body>
 </html>
