@@ -45,7 +45,7 @@ search.addEventListener("change", async () => {
     submit.disabled = false;
 })
 
-
+// submit event 
 submit.addEventListener("click", async () => {
     let entity_ = document.querySelector("#entity");
     let tbody = document.querySelector("tbody");
@@ -81,7 +81,7 @@ submit.addEventListener("click", async () => {
                             break;
                         }
                     }
-                }, 5000);
+                }, 3000);
             }
             else {
                 setTimeout(async () => {
@@ -89,7 +89,7 @@ submit.addEventListener("click", async () => {
                     let currdata = await axios.get(currUrl);
                     col.innerHTML = currdata.data.rates[entity.value] + " (1$)";
                     
-                }, 5000)
+                }, 3000)
             }
         }
         row.appendChild(col);
@@ -97,3 +97,8 @@ submit.addEventListener("click", async () => {
 
 })
 
+let list = document.querySelector("#list");
+
+list.addEventListener("dblclick", (event) => {
+    event.target.parentNode.remove();
+})
