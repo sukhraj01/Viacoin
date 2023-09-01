@@ -1,6 +1,7 @@
 body {
     margin: 0 0;
-    background-color: rgb(255, 255, 255);
+    background-image: url(assets/back.jpg);
+    background-size: cover;
     color: black;
     font-family: 'Open Sans', sans-serif;
 }
@@ -116,6 +117,12 @@ select {
     width: 10rem;
 }
 
+#submit:hover {
+    color: rgb(0, 19, 39);
+    background-color: white;
+    cursor: pointer;
+}
+
 label[for="cryptodropdown"], #cryptodropdown {
     display: none;
 }
@@ -139,12 +146,13 @@ label[for="cryptodropdown"], #cryptodropdown {
     border: 0px solid black;
     padding: 1rem 2rem;
     font-weight: bold;
+    color: rgb(0, 19, 39);
 
 }
 
 .enquiry-list table tbody tr th {
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .disclaimer {
@@ -153,3 +161,5 @@ label[for="cryptodropdown"], #cryptodropdown {
     right: 0;
     color: rgba(0,0,0,.5);
 }
+
+

@@ -95,7 +95,38 @@ submit.addEventListener("click", async () => {
         row.appendChild(col);
     }
 
+    submit.disabled = true;
+
 })
+
+
+// Add a new event listener for the "Search Enquiry" button
+document.querySelector(".search-button").addEventListener("click", async () => {
+    // Get the search input value
+    let searchInput = document.querySelector(".search input").value.toLowerCase();
+
+    // Filter the rows in the list based on the search input
+    let rows = list.querySelectorAll("tr");
+    rows.forEach((row) => {
+        let rowText = row.textContent.toLowerCase();
+        if (rowText.includes(searchInput)) {
+            row.style.display = ""; // Show matching rows
+        } else {
+            row.style.display = "none"; // Hide non-matching rows
+        }
+    });
+});
+
+// Add an event listener to clear the search input when clicking outside it
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".search")) {
+        document.querySelector(".search input").value = "";
+        // Show all rows in the list when clearing the search input
+        list.querySelectorAll("tr").forEach((row) => {
+            row.style.display = "";
+        });
+    }
+});
 
 let list = document.querySelector("#list");
 
