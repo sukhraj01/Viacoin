@@ -1,6 +1,155 @@
+body {
+    margin: 0 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
 
+header {
+    /* height: 8rem; */
+    background-color: rgb(0, 19, 39);
+    padding: 0 2.5rem;
+}
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.logo i {
+    margin: 0 .5rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 14rem;
+    height: 2rem;
+    border: rgb(0, 19, 39);
+    border-radius: .3rem;
+    padding: 0 1rem;
+}
+  
+.search-button {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.header-bot button {
+    margin: .7rem .5rem;
+    padding: .4rem;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 3px;
+    font: .88rem;   
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    transition: .5s;
+}
+
+.header-bot button:hover {
+    background-color: white;
+    color: rgb(0, 19, 39);
+    cursor: pointer;
+}
+
+#prices {
+    background-color: rgb(124, 195, 5);
+}
+
+#prices:hover {
+    background-color: rgb(139, 219, 27);
+    color: rgb(242, 239, 239);
+}
+
+.headChef {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    margin-top: 1rem;
+    padding: 2.5rem;
+}
+
+.query-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 51, 153);
+}
+
+select {
+    width: 10rem;
+    height: 1.5rem;
+    background-color: aliceblue;
+    border-radius: .7rem;
+    font-weight: 550;
+    margin-top: 1rem;
+}
+
+#submit {
+    background-color: rgb(0, 19, 39);
+    color: white;
+    font-size: 1rem;
+    font-weight: 550;
+    border: 2px rgb(0, 19, 39) solid;
+    border-radius: .7rem;
+    height: 2rem;
+    width: 10rem;
+}
 
 label[for="cryptodropdown"], #cryptodropdown {
     display: none;
+}
+
+.container2 {
+    position: relative;
+}
+
+.enquiry-list table caption {
+    font-size: 2rem;
+    font-weight: 550;
+    color: rgb(0, 51, 153);
+    text-decoration: dotted underline;
+}
+
+.enquiry-list table tr th{
+    width: 8rem;
+}
+
+.enquiry-list table thead tr th{
+    border: 0px solid black;
+    padding: 1rem 2rem;
+    font-weight: bold;
+
+}
+
+.enquiry-list table tbody tr th {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom:1rem;
+    right: 0;
+    color: rgba(0,0,0,.5);
 }
