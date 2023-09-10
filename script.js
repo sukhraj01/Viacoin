@@ -95,7 +95,7 @@ submit.addEventListener("click", async () => {
         row.appendChild(col);
     }
 
-    submit.disabled = true;
+    // submit.disabled = true;
 
 })
 
