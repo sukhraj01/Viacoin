@@ -47,6 +47,3 @@ This project is a web application that allows users to make enquiries about exch
 
 Contributions are welcome! If you'd like to contribute, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
